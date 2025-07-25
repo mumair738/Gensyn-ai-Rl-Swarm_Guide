@@ -309,7 +309,7 @@ source .venv/bin/activate
 
 <div align="center">
 
-# 📈 Upgrade to new release (V0.5.4) {Mac/Linux} 
+# 📈 Upgrade to new release (v0.5.7) {Mac/Linux} 
 
 </div>
 
