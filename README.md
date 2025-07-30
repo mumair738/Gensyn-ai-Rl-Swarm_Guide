@@ -307,6 +307,142 @@ source .venv/bin/activate
 
 * If u still Got terminated error then just restart 1-2 times: or just wait few minutes:
 
+
+---
+
+
+<div align="center">
+
+# 🐝SWARM Role & TG bot Set-Up 
+
+</div>
+
+
+## 1. Install Go
+
+### Linux/Wsl
+
+```
+cd ~
+wget https://go.dev/dl/go1.24.0.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go
+sudo tar -C /usr/local -xzf go1.24.0.linux-amd64.tar.gz
+```
+
+```
+echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
+echo 'export GOPATH=$HOME/go' >> ~/.bashrc
+echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bashrc
+source ~/.bashrc
+```
+
+* >Verify installation
+
+```
+go version
+```
+
+
+### Mac
+
+```
+brew install go
+```
+
+
+
+## 2. Telegram Bot Set-Up 🤖
+
+> To receive notifications via Telegram, you need to set up a Telegram bot and connect it to your account:
+
+
+### 2.1 Create a Telegram Bot:
+
+* Go To  https://t.me/BotFather
+
+* Send `/newbot` and follow the instructions:
+
+* It will Ask You to enter the Name & username of the Bot: 
+
+* Now it will send the Token. Look Like this: `84100000:AAGITsRXgxxxxNuP56-xxxxxxxxxxxxxxx` dont share with anyone:
+
+
+### 2.2 Get Your Chat ID:
+
+* head to your bot which was created and send message:
+
+* Visit: https://api.telegram.org/botYOUR_BOT_TOKEN/getUpdates 
+
+* Dont Forget to replace `YOUR_BOT_TOKEN` with your: which we create in above step:
+
+* You will see your `Id` here : Save it: 
+
+* >Note: If you get an empty result {"ok":true,"result":[]}, you may need to send a message to your bot first, then refresh the URL.
+
+<img width="2196" height="253" alt="image" src="https://github.com/user-attachments/assets/3d399c11-6c10-4d80-a880-a78fd2050ebf" />
+
+
+
+
+## 3. Installation & Configure GSwarm
+
+### 1. Installation
+
+```
+go install github.com/Deep-Commit/gswarm/cmd/gswarm@latest
+```
+
+* >Verify installation:
+
+```
+gswarm --version
+```
+
+
+
+### 2. Configure GSwarm:
+
+* > We will config our Gensyn Node and telegram bot here: Will Add `bot token`, `chat ID`, and `EOA address`
+
+```
+gswarm
+```
+
+* Enter Your BotToken from : [2.1 Create a Telegram Bot:](https://github.com/Mayankgg01/Gensyn-ai-Rl-Swarm_Guide/edit/main/README.md#21-create-a-telegram-bot)
+
+* Enter Your ChainId From : [2.2 Get Your Chat ID:](https://github.com/Mayankgg01/Gensyn-ai-Rl-Swarm_Guide/edit/main/README.md#22-get-your-chat-id)
+
+* Enter Your EOA address From: [Gensyn Dashboard](https://dashboard.gensyn.ai/)      --Login with your gensyn Mail:
+
+
+## 4. 🔗 Linking Discord & Telegram:
+
+
+### 1. Get the verification code From Discord
+
+* In Gensyn Dc go to `swarm-link channel` 
+
+* Enter `/link-telegram` 
+
+* You will get your code from here:
+
+
+### 2. Verify the code in Telegram Bot
+
+* Go to Your bot which you creat:
+
+* type `/verify {code}` , Replace `code` with your actual one: which u got from DC:
+
+* After verify your code You will automatically get your Role:
+
+<img width="2086" height="1241" alt="image" src="https://github.com/user-attachments/assets/d8ec9220-26a7-4809-ad38-71173063260e" />
+
+
+✔️✔️✔️Done:
+
+
+---
+
 <div align="center">
 
 # 📈 Upgrade to new release (v0.5.8) {Mac/Linux} 
