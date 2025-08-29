@@ -132,6 +132,8 @@ source .venv/bin/activate
 * Now It will promt `>> Enter the name of the model you want to use in huggingface repo/name format, or press [Enter] to use the default model.`  press `Enter` & get defalut model:
 
 
+* Now It will promt `>> Would you like your model to participate in the AI Prediction Market? [Y/n]` Enter `Y` 
+
 ---❗ If U put model manually then it can be cause of terminated❗--- So better to use Default:
 
 ------>>>If u want to select the model then choose between them: [5️⃣ Choose customised model's](https://github.com/Mayankgg01/Gensyn-ai-Rl-Swarm_Guide/edit/main/README.md#5%EF%B8%8F%E2%83%A3-choose-customised-models)
@@ -445,7 +447,7 @@ gswarm
 
 <div align="center">
 
-# 📈 Upgrade to new release (v0.5.8) {Mac/Linux} 
+# 📈 Upgrade to new release (v0.6.0) {Mac/Linux} 
 
 </div>
 
