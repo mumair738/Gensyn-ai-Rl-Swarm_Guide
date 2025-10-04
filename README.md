@@ -447,7 +447,7 @@ gswarm
 
 <div align="center">
 
-# 📈 Upgrade to new release (v0.6.1) {Mac/Linux} 
+# 📈 Upgrade to new release (v0.6.3) {Mac/Linux} 
 
 </div>
 
