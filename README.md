@@ -37,7 +37,7 @@ brew install python
 Check Version
 
 ```
-python3 --version
+python3 --version 3
 ```
 
 
